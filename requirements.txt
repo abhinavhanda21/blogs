@@ -13,7 +13,6 @@ pyasn1==0.1.9
 pycups==1.9.73
 pycurl==7.43.0
 Pygments==2.2.0
-python-apt==1.1.0b1+ubuntu0.16.4.1
 python-dateutil==2.4.2
 python-debian==0.1.27
 pytz==2017.2
