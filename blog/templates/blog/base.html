@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Abhinav's Blog</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<<<<<<< HEAD
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+=======
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Abhinav's blog</title>
+<<<<<<< HEAD
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+        <script src="anime.min.js"></script>
+        <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif}
+        .w3-bar-block .w3-bar-item {padding:20px}
+        </style>
+
+    </head>
+    <body>
+    
+<!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button">Close Menu</a>
+      <a href="{% url 'post_new' %}"  class="w3-bar-item w3-button">Post</a>
+      <a href="{% url 'post_draft_list' %}"  class="w3-bar-item w3-button">Drafts</a> 
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+      <div class="w3-light-grey w3-xlarge" style="max-width:1200px;margin:auto">
+        <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+        <div class="w3-center w3-padding-16">
+        <a href="/">MY BLOG</a>
+        </div>
+      </div>
+    </div>
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+<!-- Blog entries -->
+
+=======
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+>>>>>>> 61a71847de103542a502d3723c175a0b0ba48e97
+<body>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Abhinav's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="/">Home</a></li>
+      <li><a href="{% url 'post_new' %}"  class="w3-bar-item w3-button">Post</a></li>
+      <li><a href="{% url 'post_draft_list' %}"  class="w3-bar-item w3-button">Drafts</a></li> 
+      </ul><br>
+
+    </div>
+<<<<<<< HEAD
+    <div class="col-sm-9">
+    <h4><small>RECENT POSTS</small></h4>
+    <hr>
+
+=======
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="{% url 'post_new' %}" class="top-left"><span class="glyphicon glyphicon-plus">Post</span></a></li>
+      <li><a href="{% url 'post_draft_list' %}" class="top-left"><span class="glyphicon glyphicon-edit">Drafts</span></a></li>
+    </ul>
+  </div>
+</nav>
+>>>>>>> cfaddea219e8275857db0a89c76dd5122cd2f6da
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+>>>>>>> 61a71847de103542a502d3723c175a0b0ba48e97
+            {% block content %}
+            {% endblock %}
+    </div>
+<<<<<<< HEAD
+    </div>
+    </div>
+       <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 text-center">
+                    <p>This project is made by<i class="fa fa-heart"></i> <a href=
+                    "https://github.com/abhinavhanda21/abhinavhanda21.github.io" target="_blank"></a> <a href=
+                    "https://github.com/abhinavhanda21/abhinavhanda21.github.io" target=
+                    "_blank">open source</a></p>
+                </div>
+    <div class="col-md-4">
+                    <div class="social-footer">
+                       <a href="https://twitter.com/abhinavhanda21" target=
+                        "_blank"><i class="fa fa-twitter"></i></a> 
+
+                <a href=
+                        "https://www.instagram.com/unknown_.artist/" target=
+                        "_blank"><i class="fa fa-instagram"></i></a> <a href=
+                        "https://www.linkedin.com/in/abhinavhanda/" target=
+                        "_blank"><i class="fa fa-linkedin"></i></a>   <a href=
+                        "http://www.github.com/abhinavhanda21" target=
+                        "_blank"><i class="fa fa-github"></i></a>
+                    </div> <!-- /social footer -->
+                </div> <!-- /col-md-4 -->
+            </div><!-- /row -->
+        </div><!-- /container -->
+    </footer>
+
+=======
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+<footer class="w3-container w3-light-grey w3-padding-20 w3-margin-top">
+
+  <p>Made by <a href="http://www.abhinavhanda.me" target="_blank">Abhinav</a></p>
+</footer>
+>>>>>>> 61a71847de103542a502d3723c175a0b0ba48e97
+
+</body>
+</html>
