@@ -21,7 +21,6 @@ roman==2.0.0
 rsa==3.2.3
 s3transfer==0.1.9
 six==1.10.0
-ssh-import-id==5.5
 svg.path==2.2
 ubuntu-drivers-common==0.0.0
 ufw==0.35
